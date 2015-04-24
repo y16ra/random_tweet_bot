@@ -5,6 +5,7 @@
 ## Twitter接続情報
 以下のページでアプリ登録をして必要なキーを取得してください。
 書き込みができる権限が必要です。
+
 https://apps.twitter.com
 
 config/default.json に値を記載するか、環境変数で設定することが可能です。
@@ -42,4 +43,11 @@ TW_ACCESS_TOKEN_SECRET
 以下のキーで登録してください。
 ```
 SITEMAP_URL
+```
+
+# 使い方
+binの下にあるindex.jsを実行するとランダムに抽出したURLと記事のタイトルをつぶやきます。
+
+```
+$ node bin/index.js
 ```
