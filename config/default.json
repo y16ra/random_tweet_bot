@@ -1,0 +1,13 @@
+{
+  // Twitter
+  "twitter": {
+    "CONSUMER_KEY":        "CHANGE_YUOUR_CONSUMER_KEY",
+    "CONSUMER_SECRET":     "CHANGE_YUOUR_CONSUMER_SECRET",
+    "ACCESS_TOKEN":        "CHANGE_YUOUR_ACCESS_TOKEN",
+    "ACCESS_TOKEN_SECRET": "CHANGE_YUOUR_ACCESS_TOKEN_SECRET"
+  },
+  // target URL
+  "sitemap": {
+    "url": "CHANGE_YOUR_URL"
+  }
+}
