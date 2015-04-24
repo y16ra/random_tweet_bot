@@ -1,8 +1,18 @@
-# random tweet
+# Random tweet bot
+ブログの記事をランダムに選んでツイートできます。
+対象の記事はサイトマップXMLから取得してきます。
 
-# 設定
+## インストール - Installation
+このアプリの動作にはnode.js, npmを利用します。
+必要なモジュールをインストールするには以下を実行してください。
 
-## Twitter接続情報
+```
+$ npm install
+```
+
+## 設定 - Getting Started Guide
+
+### Twitter接続情報
 以下のページでアプリ登録をして必要なキーを取得してください。
 書き込みができる権限が必要です。
 
@@ -29,7 +39,7 @@ TW_ACCESS_TOKEN
 TW_ACCESS_TOKEN_SECRET
 ```
 
-## 記事取得先情報
+### 記事取得先情報
 記事を取得するブログのサイトマップxmlが置かれているURLを設定してください。
 こちらも、config/default.json に値を記載するか、環境変数で設定することが可能です。
 - default.jsonを利用
@@ -45,7 +55,7 @@ TW_ACCESS_TOKEN_SECRET
 SITEMAP_URL
 ```
 
-# 使い方
+## 使い方 - How to USE
 binの下にあるindex.jsを実行するとランダムに抽出したURLと記事のタイトルをつぶやきます。
 
 ```

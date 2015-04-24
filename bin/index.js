@@ -22,8 +22,8 @@ var bot = new twitter({
 });
 // サイトマップを取得するURL
 var sitemapUrl = process.env.SITEMAP_URL || config.sitemap.url;
-
-var tweet_prefix = process.env.TWEET_PREFIX || config.twitter.tweet_prefix;
+// ツイート本文のprefixで記載する文言
+var tweet_prefix = process.env.TWEET_PREFIX || config.twitter.TWEET_PREFIX;
 
 sitemap.getSites(sitemapUrl, function(err, sites){
     if(!err) {
@@ -33,6 +33,7 @@ sitemap.getSites(sitemapUrl, function(err, sites){
             htmlParser.fetch(url).then(
                 function(result){
                     var tweet_text = tweet_prefix + " " + result.$('title').text() + " " + url;
+                    console.log("tweet_text: " + tweet_text);
                     bot.post('statuses/update', {status: tweet_text}, function(error, data, res){
                         if(!error) {
                             console.log("Tweet done. " + tweet_text);
