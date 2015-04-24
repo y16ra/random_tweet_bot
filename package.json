@@ -1,0 +1,34 @@
+{
+  "name": "random_tweet_bot",
+  "version": "0.0.1",
+  "description": "This is random tweet bot. pick up blog posts from sitemap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/y16ra/random_tweet_bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "sitemap"
+  ],
+  "author": "y16ra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/y16ra/random_tweet_bot/issues"
+  },
+  "homepage": "https://github.com/y16ra/random_tweet_bot",
+  "dependencies": {
+    "cheerio-httpcli": "^0.3.1",
+    "config": "^1.12.0",
+    "date-utils": "^1.2.16",
+    "js-yaml": "^3.2.7",
+    "request": "^2.55.0",
+    "twitter": "^1.2.5",
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.8"
+  }
+}
