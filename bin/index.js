@@ -23,6 +23,8 @@ var bot = new twitter({
 // サイトマップを取得するURL
 var sitemapUrl = process.env.SITEMAP_URL || config.sitemap.url;
 
+var tweet_prefix = process.env.TWEET_PREFIX || config.twitter.tweet_prefix;
+
 sitemap.getSites(sitemapUrl, function(err, sites){
     if(!err) {
         console.log(__.size(sites));
@@ -30,7 +32,7 @@ sitemap.getSites(sitemapUrl, function(err, sites){
         __.each(samples, function(url) {
             htmlParser.fetch(url).then(
                 function(result){
-                    var tweet_text = "過去記事ガチャ - " + result.$('title').text() + " / " + url;
+                    var tweet_text = tweet_prefix + " " + result.$('title').text() + " " + url;
                     bot.post('statuses/update', {status: tweet_text}, function(error, data, res){
                         if(!error) {
                             console.log("Tweet done. " + tweet_text);
