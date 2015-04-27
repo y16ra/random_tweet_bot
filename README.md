@@ -71,3 +71,6 @@ $ node bin/index.js
 このアプリを利用してつぶやいた例
 
 https://twitter.com/monasan2002/status/591518641230745600
+
+## ライセンス - LICENSE
+The module is licensed under [MIT](./MIT-LICENSE.txt). 
