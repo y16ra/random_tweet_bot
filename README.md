@@ -2,9 +2,14 @@
 ブログの記事をランダムに選んでツイートできます。
 対象の記事はサイトマップXMLから取得してきます。
 
+This App has a function that tweet your blog post's URL and Title.
+It will be extracted at random from your blog post.
+
 ## インストール - Installation
 このアプリの動作にはnode.js, npmを利用します。
 必要なモジュールをインストールするには以下を実行してください。
+
+Required : node.js, npm
 
 ```
 $ npm install
@@ -61,3 +66,8 @@ binの下にあるindex.jsを実行するとランダムに抽出したURLと記
 ```
 $ node bin/index.js
 ```
+
+- 例
+このアプリを利用してつぶやいた例
+
+https://twitter.com/monasan2002/status/591518641230745600
