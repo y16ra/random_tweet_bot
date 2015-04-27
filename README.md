@@ -61,3 +61,6 @@ binの下にあるindex.jsを実行するとランダムに抽出したURLと記
 ```
 $ node bin/index.js
 ```
+
+## ライセンス - LICENSE
+The module is licensed under [MIT](./MIT-LICENSE.txt). 
